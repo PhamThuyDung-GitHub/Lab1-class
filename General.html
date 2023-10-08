@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .section-title {
+            color: lightseagreen;
+            font-size: 24px;
+            margin-top: 50px;
+        }
+        .subsection {
+            display: inline-block;
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            vertical-align: top;
+        }
+        .experience, .abilities {
+            display: flex;
+            justify-content: space-between;
+        }
+        .skills, .languages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skill, .language {
+            width: calc(25% - 10px);
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        .rating {
+            display: flex;
+            margin-top: 5px;
+        }
+        .rating-box {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Profile Section -->
+<div class="section-title">Profile</div>
+<p>I am a student</p>
+<div>
+    <div class="subsection">About Me: content</div>
+    <div class="subsection">Image</div>
+    <div class="subsection">Details: (Name, Age, Location)</div>
+</div>
+<hr>
+
+<!-- Experiences Section -->
+<div class="section-title">Experiences</div>
+<div class="experience">
+    <div>
+        Location, Dates
+    </div>
+    <div>
+        Field of Study, Description
+    </div>
+</div>
+<div class="experience">
+    <div>
+        Contact Information, Duration
+    </div>
+    <div>
+        Job Title, Description
+    </div>
+</div>
+<hr>
+
+<!-- Abilities Section -->
+<div class="section-title">Abilities</div>
+<div class="skills">
+    <div class="skill">
+        HTML/CSS
+        <div class="rating">
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+        </div>
+    </div>
+    <!-- Repeat for other skills -->
+</div>
+<div class="languages">
+    <div class="language">
+        Vietnamese (native)
+        <div class="rating">
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+            <div class="rating-box"></div>
+        </div>
+    </div>
+    <!-- Repeat for other languages -->
+</div>
+<hr>
+
+</body>
+</html>
