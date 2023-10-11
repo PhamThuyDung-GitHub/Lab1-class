@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.cv-container {
+    padding: 20px;
+    background-color: #FFF3E0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content, .Education-content, .columns-wrapper1, .columns-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Added to ensure flex items can wrap if necessary */
+}
+
+/* Profile section styles */
+.profile-pic {
+    max-width: 100%; /* Ensure the image fits its container */
+    margin: 0 auto;  /* Center the image horizontally */
+}
+
+/* Skills section styles */
+.skills-heading {
+    text-align: left;
+}
+
+/* Proficiency rectangles */
+.proficiency {
+    display: flex;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.proficiency input[type="radio"] {
+    display: none;
+}
+
+.proficiency .rectangle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 1px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.proficiency .rectangle:hover,
+.proficiency .rectangle:hover ~ .rectangle,
+.proficiency input[type="radio"]:checked ~ .rectangle {
+    background-color: #9CCC65;
+}
+
+/* Bootstrap Tweaks */
+
+/* Remove default Bootstrap paddings for better alignment with custom styles */
+.container-fluid {
+    padding-left: 30;
+    padding-right: 30;
+}
+
+.row {
+    margin-left: 30;
+    margin-right: 30;
+}
+
+/* Adjustments for Bootstrap column classes if they seem too tight or spaced out */
+.col-md-4, .col-md-6, .col-md-12 {
+    padding: 0 15px;
+}
