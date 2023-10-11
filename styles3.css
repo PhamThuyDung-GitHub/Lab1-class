@@ -1,56 +1,58 @@
-/* styles.css */
-
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+    font-family: "Work Sans", sans-serif;
 }
-
-header {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+img {
+    width: 15%;
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+ul {
+    list-style: none;
 }
-
-nav li {
-    display: inline;
-    margin-right: 20px;
+.jobseeking {
+    margin: 40px;
 }
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.jobseeking p {
+    font-style: oblique;
+    padding-bottom: 8px;
 }
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.jobseeking .icon1 {
+    margin-bottom: 10px;
 }
-
-.project {
-    text-align: center;
-    margin-bottom: 20px;
+.jobseeking .icon1 h5 {
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
 }
-
-.project img {
-    max-width: 100%;
-    height: auto;
+.jobseeking .icon1 ul li {
+    margin-left: 20px;
+    padding-bottom: 4px;
 }
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+.jobseeking h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.jobseeking h4 {
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 300;
+    font-style: oblique;
+}
+.jobseeking h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-style: oblique;
+    margin-left: 30px;
+}
+.jobseeking h5 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 300;
+    font-style: oblique;
 }
